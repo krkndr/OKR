@@ -6,23 +6,51 @@
     background-color: #fefae0; 
 }
 
-p {
-    color: red;
-}
-
-p {
-    color: #333!important;
-}
-
 .book_info {
-    text-align: justify; 
-    font-size: 16px; 
+    text-align: justify;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 20px; 
-    border: 2px solid #dda15e; 
-    border-radius: 10px; 
-    width: 96%; 
+    padding: 20px;
+    border: 2px solid #dda15e;
+    border-radius: 10px;
+    width: 96%;
     margin-bottom: 10px;
+    overflow: hidden;
+}
+    .book_info img {
+        width: 10%;
+        float: left;
+        margin-right: 20px;
+    }
+    .book_info p {
+        font-size: 18px;
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .book_info h3 {
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .book_info a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #dda15e;
+        border: 2px solid #dda15e;
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        transition: all 0.3s ease; 
+    }
+        .book_info a:hover {
+            background-color: #dda15e; 
+            color: #ffffff; 
+        }
+
+b + i {
+    color: #588b8b;
+}
+
+p > i {
+    color: #d77a61;
 }
 
 #welcome_txt {
@@ -64,7 +92,7 @@ a {
 }
 
 img {
-    width: 10%;
+    width: 100%;
 }
 
 
