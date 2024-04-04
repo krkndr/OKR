@@ -178,15 +178,7 @@ ol {
         margin-bottom: 5px; 
     }
 
-ul {
-    margin-left: 5%; 
-    list-style-type: square; 
-}
-    ul li {
-        margin-bottom: 10px; 
-        font-weight: bold;
-        font-size: 20px;
-    }
+
 
 dl {
     margin-bottom: 20px; 
