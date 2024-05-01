@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="author" content="krkndr" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        /* Стилі для підсвічення */
+        .highlight {
+            background-color: #ccd5ae;
+        }
+    </style>
+</head>
+<body>
+    <img src="main.jpg" alt="main" style="width:100%">
+    <div class="menu">
+        <a href="index.html">На головну</a>
+        <a href="catalog.html">Каталог книг</a>
+        <a href="reviews.html">Рецензії</a>
+        <a href="about_us.html">Про нас</a>
+    </div>
+    <h1>ДІМ КНИГИ</h1>
+    <p id="welcome_txt">Ми раді привітати вас на цьому джерелі, де слово "читання" стає магічним інструментом, відкриваючи двері до найнеймовірніших світів і пригод. Наша місія полягає в тому, щоб поділитися з вами нашою любов'ю до літератури та надихнути вас на нові відкриття та пригоди кожного разу, коли ви відкриваєте книгу.</p>
+    <ol id="bookList">
+        <li>На нашому сайті ви знайдете широкий вибір книг різних жанрів та напрямків.</li>
+        <li>Від класичних шедеврів до найсвіжіших бестселерів, ми намагаємося задовольнити смаки кожного читача.</li>
+        <li>Ось лише декілька клацань вас відділять від унікальних світів, що чекають на вас.</li>
+        <li>Не соромтеся відчувати себе як вдома, розглядаючи наші сторінки.</li>
+        <li>Будьте впевнені, що ви знайдете тут щось цікаве для себе, будь то новий роман, інформативна книга або щира порада.</li>
+    </ol>
+
+    <div class="relative"><p><b>Залишайтеся з нами, адже чекають нові рецензії, статті та багато іншого! Читайте, вдивляйтесь, діліться - книги чекають на вас!</b></p></div>
+    <script>
+        // Отримання списку
+        var bookList = document.getElementById('bookList');
+
+        // Функція-обробник для події кліку на список
+        function handleListClick(event) {
+            // Отримання елемента, на якому відбувся клік
+            var clickedElement = event.target;
+
+            // Перевірка чи клік був на елементі списку
+            if (clickedElement.tagName === 'LI') {
+                // Зняття підсвічення з попередньо підсвіченого елемента (якщо є)
+                var highlightedElement = bookList.querySelector('.highlight');
+                if (highlightedElement) {
+                    highlightedElement.classList.remove('highlight');
+                }
+
+                // Додавання підсвічення до елемента, на якому відбувся клік
+                clickedElement.classList.add('highlight');
+            }
+        }
+
+        // Додавання обробника події для списку
+        bookList.addEventListener('click', handleListClick);
+    </script>
+    <br>
+    <h2>Популярні книги на думку читачів нашого сайту</h2>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://laboratoria.pro/files/products/987.480x710.jpg" alt="Image 1">
+            <p>Четверте крило. Емпіреї. Книга 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://laboratoria.pro/files/products/1379.480x710.jpg" alt="Image 2">
+            <p>Дюна</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://laboratoria.pro/files/products/tsogo-lita-ya-stala-vrodlivoyu1.480x710.jpg" alt="Image 3">
+            <p>Цього літа я стала вродливою. Книга 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://laboratoria.pro/files/products/182.480x710.jpg" alt="Image 3">
+            <p>Квіти для Елджернона</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://laboratoria.pro/files/products/1193.480x710.jpg" alt="Image 3">
+            <p>Макова війна</p>
+        </div>
+    </div>
+
+
+    <div id="more_favorite" hidden>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://laboratoria.pro/files/products/794.480x710.jpg" alt="Image 1">
+                <p>Купи собі той довбаний букет</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://laboratoria.pro/files/products/untitled-13_1.480x710.jpg" alt="Image 2">
+                <p>Спитайте Мієчку</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://laboratoria.pro/files/products/cover_178_73.480x710.jpg" alt="Image 3">
+                <p>Танець недоумка</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://laboratoria.pro/files/products/nezrime-zhitya-addi-lyaryu.480x710.jpg" alt="Image 3">
+                <p>Незриме життя Адді Лярю</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://laboratoria.pro/files/products/cholovik-na-imya-uve.480x710.jpg" alt="Image 3">
+                <p>Чоловік на ім'я Уве</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="styled-button" data-toggle-id="more_favorite">Показати більше</button>
+    </div>
+    <script>
+        document.addEventListener('click', function (event) {
+            let id = event.target.dataset.toggleId;
+            if (!id) return;
+            let elem = document.getElementById(id);
+            elem.hidden = !elem.hidden;
+        });
+    </script>
+</body>
+</html>

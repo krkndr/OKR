@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Catalog</title>
+    <meta name="author" content="krkndr" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <img class="main_img" src="main.jpg" alt="main">
+    <div class="menu">
+        <a href="index.html">На головну</a>
+        <a href="catalog.html">Каталог книг</a>
+        <a href="reviews.html">Рецензії</a>
+        <a href="about_us.html">Про нас</a>
+    </div>
+    <h1>КАТАЛОГ КНИГ</h1>
+
+
+    <div class="page_menu_text">
+        <p><b>Ласкаво просимо до нашого каталогу книг!</b></p>
+        <span style="color: #283618; font-size: 16px;">Тут ви знайдете широкий вибір літератури різних жанрів та напрямків. Незалежно від того, чи ви шукаєте</span>
+        <span style="color: #78290f; font-size: 18px; font-weight: bold;">класичні твори, найновіші бестселери, наукові дослідження або дитячі казки - у нас є щось для кожного.</span>
+        <span style="color: #283618; font-size: 16px;">Перегляньте наш каталог і знайдіть книги, які зацікавлять вас. Ми постійно оновлюємо наш асортимент, щоб завжди мати в наявності найкращі та найцікавіші книги.</span>
+    </div>
+
+    <div class="genres">
+        <a href="#section3">Художня література</a>
+        <a href="#section2">Фентезі і Фантастика</a>
+        <a href="#section1">Класика</a>
+    </div>
+
+
+    <!-- Контейнер для кнопки та тексту -->
+    <div class="AnimationButtonContainer">
+        <br>
+        <span>Натисніть кнопку, щоб видалити анімацію</span>
+        <button id="removeAnimationButton">Видалити анімацію</button>
+    </div>
+
+    <h2 id="section3">Художня література</h2>
+    <div class="book_info">
+        <h3 class="book_title">Алі Гейзелвуд "Гіпотеза кохання"</h3>
+        <img src="https://laboratoria.pro/files/products/kniga-gipoteza-kohannya-1.480x710.jpg" alt="Зображення">
+        <p>
+            <b>Олівія Сміт</b> – аспірантка на кафедрі біології, яка безтямно закохана у свій дослідницький проєкт. На неї попереду чекає докторський ступінь та кар’єрний зріст в науковій галузі.
+            <i>А ще їй дуже потрібний підставний бойфренд…</i> <b>Адам Карлсен</b> – професор і ще те лайно. Він молодий, успішний геній біології, якого бояться абсолютно всі студенти за його прискіпливість та вимогливість.
+            І через один абсолютно випадковий інцидент їх шляхи перетинаються.  На великій науковій конференції Адам стає на бік Олівії. З ролі уявного коханця він перетворюється на чуйного та врівноваженого хлопця, якому хочеться довіряти. Всі її дослідження розбиваються об відчуття власної закоханості.
+            <i>Розібратися з власним серцем буде куди складніше, ніж осягнути гіпотезу кохання.</i>
+        </p>
+        <a href="reviews.html#section3">Відгук</a>
+        <div class="menu_book">
+            <button data-action="favorite">Додати до улюбленого</button>
+            <button data-action="want_read">Хочу прочитати</button>
+            <button data-action="share">Поділитись</button>
+        </div>
+    </div>
+    <div class="book_info">
+        <h3 class="book_title">Донна Тарт "Таємна історія"</h3>
+        <img src="https://laboratoria.pro/files/products/10_2.480x710.jpg" alt="Зображення">
+        <p><b>Річард Пейпен</b> – молодий каліфорнієць, що вступає до приватного коледжу у Новій Англії та завдяки щасливому випадку опиняється в закритій спільноті по вивченню давньогрецької культури. Шестеро студентів: близнюки Чарльз і Камілла, інтелігентний Генрі, витончений Френсіс, веселий Банні та Річард майже весь час разом, і ніщо не віщує біди. Проте любов до античної культури врешті-решт призводить до зовсім не давньогрецької трагедії, і <i>на землю біля коледжу проливається кров одного з них…</i>  Яку правду приховує закритий клуб з давньогрецької культури та куди приведуть криваві сліди злочину?</p>
+        <a href="reviews.html#section4">Відгук</a>
+        <div class="menu_book">
+            <button data-action="favorite">Додати до улюбленого</button>
+            <button data-action="want_read">Хочу прочитати</button>
+            <button data-action="share">Поділитись</button>
+        </div>
+    </div>
+
+
+
+
+    <h2 id="section2">Фентезі і Фантастика</h2>
+    <div class="book_info">
+        <h3 class="book_title">Ілларіон Павлюк "Я бачу, вас цікавить пітьма"</h3>
+        <img src="https://laboratoria.pro/files/products/ya_bachu_vas.480x710.jpg" alt="Зображення">
+        <p>Андрій Гайстер, кримінальний психолог з Києва потрапляє в маленьке забуте село <b>Буськів Сад</b> розслідувати зникнення маленької дівчинки. Однієї зимової ночі вона вийшла з дому і більше не повернулась. Село вкрите чутками про маніяка – Звіра, який полює на дівчат і не лишає жодних слідів. Чому люди зупиняються, а не продовжують шукати жертв? Чому в селищі головне правило <i>«кожному своє»</i>? Чи вистачить сил Андрію відшукати дівчинку? І чому у Буськовому Саду немає кладовища?</p>
+        <a href="reviews.html#section1">Відгук</a>
+        <div class="menu_book">
+            <button data-action="favorite">Додати до улюбленого</button>
+            <button data-action="want_read">Хочу прочитати</button>
+            <button data-action="share">Поділитись</button>
+        </div>
+    </div>
+    <div class="book_info">
+        <h3 class="book_title">Сара Дж. Маас "Двір шипів і троянд"</h3>
+        <img src="https://laboratoria.pro/files/products/dvirsh-shipiv-1.480x710.jpg" alt="Зображення">
+        <p>Світ людей існує поруч зі світом фейрі, <b>Прифією</b>. Але їх розділяє стіна та сильна неприязнь. Фейра, дівчина зі світу людей, з дитинства стала опорою для батька та двох сестер. Вони жили бідно і щоб не померти з голоду їй доводилося полювати. Під час одного полювання вона вбиває вовка і увечері у їх будинку з’являється безсмертний Темлін, який вимагає в якості розплати за смерть друга піти з ним. Фейра опиняється у Прифії де на неї чекає довічне ув’язнення в маєтку Двору весни. Ув’язнення поступово змінюється міцним зв’язком, що виникає між Фейрою та Темліном. <i>Але чи зможе Фейра врятувати Прифію від зла, що насувається?</i></p>
+        <a href="reviews.html#section2">Відгук</a>
+        <div class="menu_book">
+            <button data-action="favorite">Додати до улюбленого</button>
+            <button data-action="want_read">Хочу прочитати</button>
+            <button data-action="share">Поділитись</button>
+        </div>
+    </div>
+
+    <h2 id="section1">Класика</h2>
+    <div class="book_info">
+        <h3 class="book_title">Шарлотта Бронте "Джейн Ейр"</h3>
+        <img src="https://laboratoria.pro/files/products/dzhejn-ejr.1800x1200w.jpg" alt="Зображення">
+        <p>Шарлотта Бронте розповідає історію осиротілої <b>Джейн Ейр</b>, яка зростає в самотності і серед жорстокості. Неспокійне дитинство загартовує природну незалежність і силу духу Джейн, які виявляються необхідними, коли вона влаштовується гувернанткою до молодого аристократа, задумливого містера Рочестера. У міру того, як розвиваються її почуття до Рочестера, Джейн поступово розкриває <i>страшну таємницю його маєтку, що змушує її зробити вибір</i>. Залишитися з Рочестером і жити з наслідками, чи слідувати своїм переконанням – навіть якщо це означає <b>покинути чоловіка, якого вона кохає</b>? Роман, сповнений сили та інтриг. <i>«Джейн Ейр» досі вражає читачів пристрасним зображенням прагнення жінки до рівності та свободи.</i></p>
+        <div class="menu_book">
+            <button data-action="favorite">Додати до улюбленого</button>
+            <button data-action="want_read">Хочу прочитати</button>
+            <button data-action="share">Поділитись</button>
+        </div>
+    </div>
+
+    <div class="book_info">
+        <h3 class="book_title">Іван Багряний "Тигролови"</h3>
+        <div>
+            <img src="https://laboratoria.pro/files/products/314.480x710.jpg" alt="Зображення">
+            <p>Пригодницький роман з автобіографічними елементами про становлення «<b>нового українця</b>», який зможе здолати злочинний і нелюдський комуністичний режим.  Багатогранний роман, який є своєрідним <i>гімном людині, яка бореться за своє щастя і перемагає</i>. Іван Багряний пише про сталінські репресії 30-х років ХХ століття, а також змальовує побут і традиції українців, засланих у північну тайгу. У центрі сюжету — Григорій і Наталка, чиє кохання піддається випробуванню.</p>
+            <div class="menu_book">
+                <button data-action="favorite">Додати до улюбленого</button>
+                <button data-action="want_read">Хочу прочитати</button>
+                <button data-action="share">Поділитись</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Функція-обробник для події наведення миші
+        function handleMouseOver(event) {
+            var element = event.currentTarget;
+            element.style.backgroundColor = '#dde5b6';
+            var title = element.querySelector('.book_title');
+            title.style.fontSize = '24px';
+            title.style.color = '#283618';
+        }
+
+        // Функція-обробник для події відведення миші
+        function handleMouseOut(event) {
+            var element = event.currentTarget;
+            element.style.backgroundColor = 'transparent';
+            var title = element.querySelector('.book_title');
+            title.style.fontSize = '';
+            title.style.color = '';
+        }
+
+        // Отримання всіх елементів з класом book_info
+        var bookInfoElements = document.querySelectorAll('.book_info');
+
+        // Призначення функцій-обробників кожному елементу окремо
+        for (var i = 0; i < bookInfoElements.length; i++) {
+            var element = bookInfoElements[i];
+            element.addEventListener('mouseover', handleMouseOver);
+            element.addEventListener('mouseout', handleMouseOut);
+        }
+
+        // Отримання кнопки
+        var removeAnimationButton = document.getElementById('removeAnimationButton');
+
+        // Функція-обробник для видалення обробників подій
+        function removeAnimation() {
+            for (var i = 0; i < bookInfoElements.length; i++) {
+                var element = bookInfoElements[i];
+                element.removeEventListener('mouseover', handleMouseOver);
+                element.removeEventListener('mouseout', handleMouseOut);
+            }
+        }
+
+        // Додавання обробника події для кнопки
+        removeAnimationButton.addEventListener('click', removeAnimation);
+
+        class Menu {
+            constructor(elems) {
+                this._elems = elems;
+                this._elems.forEach(elem => {
+                    elem.addEventListener('click', this.onClick.bind(this));
+                });
+            }
+
+            favorite() {
+                alert('Книгу додано до улюблених');
+            }
+
+            want_read() {
+                alert('Книгу додано до "ХочуПрочитати"');
+            }
+
+            share() {
+                alert('Посилання скопійоване в буфер обміну');
+            }
+
+            onClick(event) {
+                let action = event.target.dataset.action;
+                if (action && typeof this[action] === 'function') {
+                    this[action]();
+                }
+            }
+        }
+
+        // Отримання всіх елементів з класом 'menu'
+        const menuElements = document.querySelectorAll('.menu_book');
+
+        // Створення об'єкту меню для кожного елемента з класом 'menu'
+        menuElements.forEach(menuElement => {
+            new Menu(menuElement.querySelectorAll('button'));
+        });
+    </script>
+</body>
+</html>
