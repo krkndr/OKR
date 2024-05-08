@@ -6,6 +6,9 @@
     background-color: #fefae0; 
 }
 
+#puzzle {
+    width: 6%;
+}
 /* Стилі для кнопки */
 #removeAnimationButton {
     display: inline-block;
@@ -104,7 +107,7 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap; /* Заворот рядків, якщо елементів забагато */
-    gap: 20px; /* Відстань між елементами сітки */
+    /*gap: 20px; /* Відстань між елементами сітки */
     margin-left: 10%;
 }
 
@@ -112,7 +115,7 @@
     flex: 1 0 calc(20% - 20px); /* Ширина елемента (33.33% - відступи) */
     max-width: calc(20% - 20px); /* Максимальна ширина елемента */
     margin-bottom: 20px; /* Відстань між рядками */
-
+    transition: transform 0.5s; /* додаємо анімацію */
 }
 
     .grid-item img {

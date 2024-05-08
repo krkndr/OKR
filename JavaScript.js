@@ -133,24 +133,17 @@ function showWrite() {
     document.write("<p>Це текст, доданий за допомогою document.write()</p>");
 }
 
+// Призначення функції-обробника події через атрибут
 function changeColorSocialLink() {
-    // Отримання елементу заголовка
     var header = document.getElementById('socialLink');
-    // Зміна кольору заголовка
-    header.style.color = '#432818'; // Новий колір
-}
-
-// Функція для зміни кольору заголовка
-function changeColorNovelty() {
-    // Отримання елементу заголовка
-    var novelty = document.getElementById('novelty');
-    // Зміна кольору заголовка
-    novelty.style.color = '#432818'; // Новий колір
+    header.style.color = '#432818'; 
 }
 
 // Призначення функції-обробника події через властивість
-//document.getElementById('novelty').onmouseover = changeColorNovelty;
-
+function changeColorNovelty() {
+    var novelty = document.getElementById('novelty');
+    novelty.style.color = '#432818'; 
+}
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('novelty').onmouseover = changeColorNovelty;
 });
